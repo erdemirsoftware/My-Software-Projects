@@ -1,0 +1,23 @@
+import random
+liste1=[]
+for x in range(1,51):
+    liste1.append(random.randint(1,101))
+
+
+k=51
+for i in range(0,50):
+    kontrol=0
+    k=k-1
+    for a  in range(0,k):
+
+        if(liste1[a]>kontrol):
+            kontrol=liste1[a]
+
+    liste1.remove(kontrol)
+    liste1.append(kontrol)
+
+
+print(liste1)
+
+
+
